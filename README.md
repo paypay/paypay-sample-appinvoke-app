@@ -1,1 +1,1 @@
-# paypay-sample-android-app
+# paypay-sample-appinvoke-app
