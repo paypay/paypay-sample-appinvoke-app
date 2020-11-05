@@ -54,8 +54,6 @@ class WebViewActivity : AppCompatActivity() {
                         finish()
                         return true
                     }
-                    // YMD_DEV-37 PayPay対応 2020.09.17 begin
-                    // 現時点(2020/9/17)検証URL
                     if (url.startsWith("https") && url.startsWith("https://stg-www.paypay-corp.co.jp/app/cashier")) {
                         val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
                         if (intent.resolveActivity(getPackageManager()) != null) {
@@ -64,7 +62,6 @@ class WebViewActivity : AppCompatActivity() {
                         finish()
                         return true
                     }
-                    // 2020/9/25以降URL
                     if (url.startsWith("https") && url.startsWith("https://stg-www.sandbox.paypay.ne.jp/app/cashier")) {
                         val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
                         if (intent.resolveActivity(getPackageManager()) != null) {
@@ -77,8 +74,6 @@ class WebViewActivity : AppCompatActivity() {
                 return false
             }
         }
-//        startActivity(intent)
-//        setContentView(codeWeb)
     }
 
 
