@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">AppInvokeTestApplication</string>
+    <string name="launch_web">Launch Web</string>
+</resources>
